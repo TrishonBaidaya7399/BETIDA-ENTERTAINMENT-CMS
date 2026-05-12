@@ -1,0 +1,48 @@
+{
+  "name": "new-dev-proje",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "package.json",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "sanity dev",
+    "start": "sanity start",
+    "build": "sanity build",
+    "deploy": "sanity deploy",
+    "translate": "node scripts/translate-blocks.js",
+    "watch-order": "npx ts-node scripts/watch-order-rank.ts",
+    "dev:prod": "concurrently \"npm run dev\" \"npm run watch-order\""
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/assist": "^6.0.2",
+    "@sanity/color-input": "^6.0.4",
+    "@sanity/document-internationalization": "^6.0.1",
+    "@sanity/orderable-document-list": "^1.5.1",
+    "@sanity/vision": "^5.14.1",
+    "react": "^19.1",
+    "react-dom": "^19.1",
+    "sanity": "^5.14.1",
+    "sanity-plugin-internationalized-array": "^5.0.0",
+    "styled-components": "^6.1.18",
+    "tar": "^7.5.11"
+  },
+  "devDependencies": {
+    "@sanity/eslint-config-studio": "^6.0.0",
+    "@types/react": "^19.1",
+    "concurrently": "^9.2.1",
+    "eslint": "^9.28",
+    "prettier": "^3.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "prettier": {
+    "semi": false,
+    "printWidth": 100,
+    "bracketSpacing": false,
+    "singleQuote": true
+  }
+}
