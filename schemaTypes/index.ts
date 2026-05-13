@@ -23,6 +23,7 @@ import affiliateCampaign from './documents/affiliate/affiliate-campaign'
 import affiliateCommission from './documents/affiliate/affiliate-commission'
 import affiliateRefferedUser from './documents/affiliate/affiliate-reffered-user'
 import affiliateFaq from './documents/affiliate/affiliate-faq'
+import affiliatesData from './documents/affiliate/affiliates-data'
 import api from './documents/settings/api'
 import statisticsModal from './documents/statistics-modal'
 import {depositLimitsContent} from './documents/responsible-gambling/rg-deposit-limits-content'
@@ -74,6 +75,7 @@ import responsiveGamblingTabs from './documents/responsible-gambling/responsive-
 import notificationCategoryConfig from './documents/notification/notification-category-config'
 import notificationRoutingMap from './documents/notification/notification-routing-map'
 import {rgBudgetCalculator} from './documents/responsible-gambling/rg-budget-calculator'
+import responsibleGamblingData from './documents/responsible-gambling/responsible-gambling-data'
 import notificationTemplates from './documents/notification/notification-templates'
 import jackpotSection from './documents/jackpot-section'
 import featuredGames from './documents/featured-games'
@@ -169,6 +171,7 @@ export const schemaTypes = [
   // sportsTabsSettings,
   // casino,  // unused
   // casinoTabsSettings,  // unused
+  responsibleGamblingData,
   rgTabLabel,
   responsiveGamblingTabs,
   rgBranchName,
@@ -188,6 +191,7 @@ export const schemaTypes = [
   provablyFairCalculationConfig,
   sponsorship,
   casinoChallenges,
+  affiliatesData,
   affiliateOverview,
   affiliateCampaign,
   affiliateCommission,
